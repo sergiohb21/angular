@@ -1,0 +1,7 @@
+<div>
+    <div #wave></div>
+    <button (click)="playPause()">
+        <span *ngIf="isPlay(); else elseblock">Pause</span>
+        <ng-template #elseblock>Play</ng-template>
+    </button>
+</div>
